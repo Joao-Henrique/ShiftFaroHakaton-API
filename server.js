@@ -12,6 +12,7 @@ mongoose.connect('mongodb://pipetest:1234567890@pipecluster0-shard-00-00-dgn30.m
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "https://joao-henrique.github.io");
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   next();
 });
 
