@@ -1,25 +1,25 @@
 const express = require('express');
 const router = express.Router();
-const DataModel = require('../thisWillBeReplacedByTheDataModel'); // Replace this with the dataModel name
+const AppDataModel = require('../AppDataModel');
 
 // get a list of stored Data from the db
 router.get('/databaseFiles', function (req, res, next) {
-  ImageCardModel.find({}).then(function (imageCard) {
-    res.send(imageCard);
+  AppDataModel.find({}).then(function (AppData) {
+    res.send(AppData);
   })
 });
 
 // get a list of specific user Data  from the db
 router.get('/databaseFiles/:dataType', function (req, res, next) {
-  ImageCardModel.find({ dataType: req.params.user }).then(function (imageCard) {
-    res.send(imageCard);
+  AppDataModel.find({ dataType: req.params.user }).then(function (AppData) {
+    res.send(AppData);
   })
 });
 
 // add a new image to the db
 router.post('/databaseFiles', function (req, res, next) {
-  ImageCardModel.create(req.body).then(function (imageCard) {
-    res.send(imageCard);
+  AppDataModel.create(req.body).then(function (AppData) {
+    res.send(AppData);
   }).catch(next);
 });
 
