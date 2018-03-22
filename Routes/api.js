@@ -9,14 +9,14 @@ router.get('/databaseFiles', function (req, res, next) {
   })
 });
 
-// get a list of specific user Data  from the db
+// get a list of specific Data  from the db
 router.get('/databaseFiles/:dataType', function (req, res, next) {
   AppDataModel.find({ dataType: req.params.user }).then(function (AppData) {
     res.send(AppData);
   })
 });
 
-// add a new image to the db
+// add new Data to the db
 router.post('/databaseFiles', function (req, res, next) {
   AppDataModel.create(req.body).then(function (AppData) {
     res.send(AppData);
