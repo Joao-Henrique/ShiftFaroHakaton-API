@@ -11,3 +11,5 @@
 ## - Project date:
 
 + March 2018
+
++ Check it out on the [project.page](https://shiftfaroapp-api.herokuapp.com/).
