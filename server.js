@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 mongoose.connect('mongodb://pipetest:1234567890@pipecluster0-shard-00-00-dgn30.mongodb.net:27017,pipecluster0-shard-00-01-dgn30.mongodb.net:27017,pipecluster0-shard-00-02-dgn30.mongodb.net:27017/test?ssl=true&replicaSet=PipeCluster0-shard-0&authSource=admin');
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "localhost:3001");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3001");
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   next();
 });
