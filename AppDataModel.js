@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const appDataSchema = new Schema({
-  type: {
-    type: String,
-    required: [true, 'Type field is required']
-  },
   numberOfPoos: {
     type: Number,
     default: 1000
