@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const appDataSchema = new Schema({
   type: {
     type: String,
-    required: [true, 'Title field is required']
+    required: [true, 'Type field is required']
   },
   numberOfPoos: {
     type: Number,
@@ -12,7 +12,7 @@ const appDataSchema = new Schema({
   },
   latlng: {
     type: Array,
-    required: [true, 'Title field is required']
+    required: [true, 'Latlng field is required']
   },
   pooIndicator: {
     type: Number,
