@@ -6,9 +6,17 @@ const appDataSchema = new Schema({
     type: String,
     required: [true, 'Title field is required']
   },
-  coord: {
-    type: Object,
+  numberOfPoos: {
+    type: Number,
+    default: 1000
+  },
+  latlng: {
+    type: Array,
     required: [true, 'Title field is required']
+  },
+  pooIndicator: {
+    type: Number,
+    default: 10000
   },
   date: {
     type: Date,
