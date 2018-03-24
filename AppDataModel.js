@@ -8,7 +8,6 @@ const appDataSchema = new Schema({
   },
   latlng: {
     type: Array,
-    required: [true, 'Latlng field is required']
   },
   pooIndicator: {
     type: Number,
