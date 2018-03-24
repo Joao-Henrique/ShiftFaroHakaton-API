@@ -4,14 +4,12 @@ const Schema = mongoose.Schema;
 const appDataSchema = new Schema({
   numberOfPoos: {
     type: Number,
-    default: 1000
   },
   latlng: {
     type: Number,
   },
   pooIndicator: {
     type: Number,
-    default: 10000
   },
   date: {
     type: Date,
