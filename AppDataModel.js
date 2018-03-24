@@ -8,7 +8,6 @@ const appDataSchema = new Schema({
   },
   latlng: {
     type: Array,
-    default: [1, 1]
   },
   pooIndicator: {
     type: Number,
