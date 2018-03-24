@@ -7,7 +7,7 @@ const appDataSchema = new Schema({
     default: 1000
   },
   latlng: {
-    type: Array,
+    type: Number,
   },
   pooIndicator: {
     type: Number,
