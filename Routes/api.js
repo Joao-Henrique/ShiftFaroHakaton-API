@@ -19,8 +19,6 @@ router.get('/databaseFiles/:dataType', function (req, res, next) {
 // add new Data to the db
 router.post('/databaseFiles', function (req, res, next) {
 
-  console.log("req.body")
-  console.log(req.body)
   AppDataModel.create(req.body).then(function (AppData) {
     res.send(AppData);
   }).catch(next);
